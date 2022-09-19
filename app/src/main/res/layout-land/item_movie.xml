@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#423883"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/ivBackdrop"
+        android:layout_width="148dp"
+        android:layout_height="wrap_content"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tvOverview"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_below="@+id/tvTitle"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_toEndOf="@+id/ivBackdrop"
+        android:ellipsize="end"
+        android:fontFamily="@font/concert_one"
+        android:maxLines="4"
+        android:text="&quot;Abandoned by her family, Kya raises herself all alone in the marshes outside of her small town. When her former boyfriend is found dead, Kya is instantly branded by the local townspeople and law enforcement as the prime suspect for his murder.&quot;"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="#E5DCDC"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:layout_toEndOf="@+id/ivBackdrop"
+        android:ellipsize="end"
+        android:fontFamily="@font/alfa_slab_one"
+        android:shadowColor="#989191"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="3"
+        android:text="Willy Wonka Chocolate Factoy"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#E5DCDC" />
+
+</RelativeLayout>
